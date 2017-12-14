@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>KNA System | Member Data Input</title>
+    <title>KNA System | Membership Aboarding</title>
     <!-- Favicon-->
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
@@ -13,22 +13,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- JQuery DataTable Css -->
-    <link href="../../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- Custom Css -->
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-green">
@@ -69,7 +69,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">KNA System - Approve Member</a>
+                <a class="navbar-brand" href="../../index.html">New Member</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -91,8 +91,8 @@
                     <img src="../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BDM 1</div>
-                    <div class="email">bdm1@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">account 1</div>
+                    <div class="email">account@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -114,13 +114,13 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    
+
                     <!--<li class="active">
                         <a href="member_input.html">
                             <i class="material-icons">view_list</i>
                             <span>Member Data Input</span>
                         </a>
-                    </li>--> 
+                    </li>-->
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
@@ -128,18 +128,18 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="member_input.html">Membership Data Input</a>
+                                <a href="member_new.html">Membership Data Input</a>
                             </li>
                             <li class="active">
                                 <a href="member_approve.html">Membership Approval</a>
                             </li>
                             <li>
-                                <a href="member_activation.html">Membership Activation</a>
+                                <a href="member_activate.html">Membership Activation</a>
                             </li>
                         </ul>
                     </li>
-                    
-                    
+
+
                 </ul>
             </div>
             <!-- #Menu -->
@@ -302,172 +302,25 @@
 
     <section class="content">
         <div class="container-fluid">
-            <!-- Input
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                INPUT
-                                <small>Membership detail</small>
-                            </h2>
-                            
-                        </div>
-                        <div class="body">
-                            
-                            <h2 class="card-inside-title">Nama</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Nama Depan" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Nama Belakang" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="divider"></div>
-                            <h2 class="card-inside-title">Tempat Tanggal Lahir</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Tempat" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="datepicker form-control" placeholder="Pilih tanggal...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <h2 class="card-inside-title">No KTP</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" placeholder="No KTP" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h2 class="card-inside-title">Alamat Lengkap</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <textarea rows="4" class="form-control no-resize" placeholder="Isi Lengkap alamat tempat tinggal"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <select class="form-control show-tick">
-                                        <option value="">Pilih provinsi</option>
-                                        <option value="10">DKI Jakarta</option>
-                                        <option value="20">Jawa Barat</option>
-                                        <option value="30">Jawa Tengah</option>
-                                        <option value="40">Jawa TImur</option>
-                                        <option value="50">Banten</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6">
-                                    <select class="form-control show-tick">
-                                        <option value="">Pilih kota</option>
-                                        <option value="10">Jakarta</option>
-                                        <option value="20">Bandung</option>
-                                        <option value="30">Semarang</option>
-                                        <option value="40">Jogjakarta</option>
-                                        <option value="50">Sukabumi</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <h2 class="card-inside-title">Rekening Bank</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <select class="form-control show-tick">
-                                        <option value="">Pilih Bank</option>
-                                        <option value="10">Mandiri</option>
-                                        <option value="20">BNI</option>
-                                        <option value="30">BCA</option>
-                                        <option value="40">BRI</option>
-                                        <option value="50">CIMB Niaga</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Atas Nama" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" placeholder="No Rekening Bank" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            <h2 class="card-inside-title">Kelengkapan Berkas</h2>
-                                <div class="demo-checkbox">
-                                    <input type="checkbox" id="basic_checkbox_1" />
-                                    <label for="basic_checkbox_1">KTP</label>
-                                    <input type="checkbox" id="basic_checkbox_2" />
-                                    <label for="basic_checkbox_2">Kartu Keluarga</label>
-                                    <input type="checkbox" id="basic_checkbox_3" />
-                                    <label for="basic_checkbox_3">Buku Rekening</label>
-                                </div>
-                            
-                            <br/> 
-                            <br/>
-                            <div class="row clearfix">        
-                                <div class="col-xs-4">
-                                    <button class="btn btn-block bg-green waves-effect" type="submit">Submit</button>
-                                </div>
-                            </div>
-                    
 
-                        </div>
-                                
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Input -->
-            
             <!-- Exportable Table -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>
-                                EXPORTABLE TABLE
+                                New Member to Approve
                             </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
                                     </a>
-                                    <ul class="dropdown-menu pull-right">
+                                    <!--<ul class="dropdown-menu pull-right">
                                         <li><a href="javascript:void(0);">Action</a></li>
                                         <li><a href="javascript:void(0);">Another action</a></li>
                                         <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
+                                    </ul>-->
                                 </li>
                             </ul>
                         </div>
@@ -542,40 +395,40 @@
                 </div>
             </div>
             <!-- #END# Exportable Table -->
-            
+
         </div>
     </section>
 
 <!-- Jquery Core Js -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="../../plugins/node-waves/waves.js"></script>
+    <script src="../plugins/node-waves/waves.js"></script>
 
     <!-- Jquery DataTable Plugin Js -->
-    <script src="../../plugins/jquery-datatable/jquery.dataTables.js"></script>
-    <script src="../../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
-    <script src="../../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+    <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
 
     <!-- Custom Js -->
-    <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/tables/jquery-datatable.js"></script>
+    <script src="../js/admin.js"></script>
+    <script src="../js/pages/tables/jquery-datatable.js"></script>
 
     <!-- Demo Js -->
-    <script src="../../js/demo.js"></script></body>
+    <script src="../js/demo.js"></script></body>
 </html>

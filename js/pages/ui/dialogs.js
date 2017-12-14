@@ -43,9 +43,13 @@ function showWithTitleMessage() {
     swal("Here's a message!", "It's pretty, isn't it?");
 }
 
+//function showSuccessMessage() {
+//    swal("Good job!", "You clicked the button!", "success");
+//}
 function showSuccessMessage() {
-    swal("Good job!", "You clicked the button!", "success");
+    swal("Good job!", "You submited member data!", "success");
 }
+
 
 function showConfirmMessage() {
     swal({
